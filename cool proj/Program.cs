@@ -1,13 +1,15 @@
-﻿using Internal;
+﻿using System.Collections.Concurrent;
+using System.Reflection.Emit;
 using System.Data;
 using System;
 namespace cool_proj
 {
     class Program
     {
-        static void Main(string[] args)
+        static void What_The_Flip()
         {
-            Console.WriteLine("Now, input the correct password.");
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.WriteLine("Input the correct password.");
             bool loggedOn;
             string password;
             password =  Console.ReadLine();
@@ -26,12 +28,13 @@ namespace cool_proj
             }
             else if (loggedOn == false)
             {
-            Console.WriteLine("Wrong.");
+            Console.WriteLine("Nope!");
             Console.ReadLine();
             Environment.Exit(0);
             }
+
+            
             Console.WriteLine("Double Check; What is password 2: ");
-            password2 = null;
             string password2 = Console.ReadLine();
 
 
