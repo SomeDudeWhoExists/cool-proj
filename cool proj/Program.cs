@@ -6,9 +6,8 @@ namespace cool_proj
 {
     class Program
     {
-        static void What_The_Flip()
+        static void Main(String[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Black;
             Console.WriteLine("Input the correct password.");
             bool loggedOn;
             string password;
@@ -18,7 +17,7 @@ namespace cool_proj
             loggedOn = true;
             }
             else
-            {
+            { 
             loggedOn = false;
             }
 
